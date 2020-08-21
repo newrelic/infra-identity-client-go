@@ -20,7 +20,7 @@ go get golang.org/x/net/context
 go get github.com/antihax/optional
 ```
 
-Put the package under your project folder and add the following in import:
+Put the package in your project folder. When you import, add the following:
 
 ```golang
 import "./identity"

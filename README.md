@@ -6,7 +6,7 @@ Go auto-generated client for the OpenAPI Infrastructure Identity Client
 
 ## Installation
 
-Via go modules:
+Install with go modules:
 
 ```
 module your/module/path
@@ -16,15 +16,15 @@ go 1.13
 require github.com/newrelic/infra-identity-client-go/identity v1.5.0
 ```
 
-Via go get:
+Install with go get:
 
 ```
 go get github.com/newrelic/infra-identity-client-go/identity
 ```
 
-**Please pay attention**: the module path finishes with `/identity`.
+**Please note**: the module path ends with `/identity`.
 
-## Getting Started
+## Get Started
 
 ```go
 package main
@@ -53,9 +53,9 @@ func main() {
 
 ## Support
 
-New Relic hosts and moderates an online forum where customers can interact with New Relic employees as well as other customers to get help and share best practices. Like all official New Relic open source projects, there's a related Community topic in the New Relic Explorers Hub. You can find this project's topic/threads here:
+The New Relic Explorers Hub is an online forum where customers can interact with New Relic employees as well as other customers to get help and share best practices. Like all official New Relic open source projects, there's a related Community topic in the New Relic Explorers Hub. You can find this project's topic/threads here:
 
->Add the url for the support thread here
+> https://discuss.newrelic.com/c/full-stack-observability/infrastructure
 
 ## Contributing
 We encourage your contributions to improve New Relic Infrastructure Identity - Go lang client! Keep in mind when you submit your pull request, you'll need to sign the CLA via the click-through using CLA-Assistant. You only have to sign the CLA one time per project.
