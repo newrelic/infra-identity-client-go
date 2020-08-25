@@ -6,9 +6,9 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ConnectPost**](DefaultApi.md#ConnectPost) | **Post** /connect | Connect using a fingerprint
 [**ConnectPut**](DefaultApi.md#ConnectPut) | **Put** /connect | Reconnect using a fingerprint and an entityID
-[**DisconnectPut**](DefaultApi.md#DisconnectPut) | **Put** /disconnect | Disconnects an entity
-[**LookupBatchPost**](DefaultApi.md#LookupBatchPost) | **Post** /lookup/batch | Lookup batch for list of entities, given their entityNames
-[**LookupPost**](DefaultApi.md#LookupPost) | **Post** /lookup | Lookup for an entity, given the entityName
+[**DisconnectPut**](DefaultApi.md#DisconnectPut) | **Put** /disconnect | disconnects an entity
+[**LookupBatchPost**](DefaultApi.md#LookupBatchPost) | **Post** /lookup/batch | lookup batch for list of entities, given their entityNames
+[**LookupPost**](DefaultApi.md#LookupPost) | **Post** /lookup | lookup for an entity, given the entityName
 [**RegisterBatchPost**](DefaultApi.md#RegisterBatchPost) | **Post** /register/batch | Register integration entities in batch of a max size of 1000 and 1MB
 [**RegisterBatchPut**](DefaultApi.md#RegisterBatchPut) | **Put** /register/batch | Re-register integration entities in batch of a max size of 1000 and 1MB
 [**RegisterPost**](DefaultApi.md#RegisterPost) | **Post** /register | Register integration entity
