@@ -1,4 +1,4 @@
-module source.datanerd.us/meatballs/infra-identity-client-go/identity
+module github.com/newrelic/infra-identity-client-go/identity
 
 require (
 	github.com/antihax/optional v1.0.0
