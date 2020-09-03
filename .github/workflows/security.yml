@@ -12,4 +12,4 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --severity-threshold=high --file=identity/go.mod
+          args: --severity-threshold=high
