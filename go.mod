@@ -1,4 +1,6 @@
-module github.com/newrelic/infra-identity-client-go/identity
+module github.com/newrelic/infra-identity-client-go
+
+go 1.14
 
 require (
 	github.com/antihax/optional v1.0.0
