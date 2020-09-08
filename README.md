@@ -13,7 +13,7 @@ module your/module/path
 
 go 1.13
 
-require github.com/newrelic/infra-identity-client-go/identity v1.5.0
+require github.com/newrelic/infra-identity-client-go/identity v1.5.1
 ```
 
 Install with go get:
