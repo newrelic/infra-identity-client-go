@@ -13,8 +13,6 @@ Name | Type | Description | Notes
 **MacAddresses** | [**map[string][]string**](array.md) |  | [optional] 
 **Type** | **string** |  | [optional] 
 
-> At least on of the list: FullHostname, Hostname, CloudProviderId, DisplayName is mandatory
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
 

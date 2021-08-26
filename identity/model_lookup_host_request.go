@@ -8,8 +8,7 @@
  */
 
 package identity
-// Identity struct for Identity
-type Identity struct {
-	EntityId int64 `json:"entityId"`
-	Guid string `json:"guid"`
+// LookupHostRequest struct for LookupHostRequest
+type LookupHostRequest struct {
+	Fingerprint Fingerprint `json:"fingerprint"`
 }
