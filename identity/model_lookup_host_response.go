@@ -8,11 +8,8 @@
  */
 
 package identity
-// ReRegisterBatchEntityResponse struct for ReRegisterBatchEntityResponse
-type ReRegisterBatchEntityResponse struct {
-	EntityId int64 `json:"entityId,omitempty"`
-	EntityName string `json:"entityName,omitempty"`
+// LookupHostResponse struct for LookupHostResponse
+type LookupHostResponse struct {
+	EntityId int64 `json:"entityId"`
 	Guid string `json:"guid,omitempty"`
-	Warnings []string `json:"warnings,omitempty"`
-	Error string `json:"error,omitempty"`
 }

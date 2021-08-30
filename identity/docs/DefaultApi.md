@@ -6,9 +6,11 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ConnectPost**](DefaultApi.md#ConnectPost) | **Post** /connect | Connect using a fingerprint
 [**ConnectPut**](DefaultApi.md#ConnectPut) | **Put** /connect | Reconnect using a fingerprint and an entityID
-[**DisconnectPut**](DefaultApi.md#DisconnectPut) | **Put** /disconnect | Disconnects an entity
-[**LookupBatchPost**](DefaultApi.md#LookupBatchPost) | **Post** /lookup/batch | Lookup batch for list of entities, given their entityNames
-[**LookupPost**](DefaultApi.md#LookupPost) | **Post** /lookup | Lookup for an entity, given the entityName
+[**DisconnectPut**](DefaultApi.md#DisconnectPut) | **Put** /disconnect | disconnects an entity
+[**LookupBatchPost**](DefaultApi.md#LookupBatchPost) | **Post** /lookup/batch | lookup batch for list of entities, given their entityNames
+[**LookupHostBatchPost**](DefaultApi.md#LookupHostBatchPost) | **Post** /lookup_host/batch | lookup batch for list of host entities, given their fingerprints
+[**LookupHostPost**](DefaultApi.md#LookupHostPost) | **Post** /lookup_host | lookup for a host entity, given the fingerprint
+[**LookupPost**](DefaultApi.md#LookupPost) | **Post** /lookup | lookup for an entity, given the entityName
 [**RegisterBatchPost**](DefaultApi.md#RegisterBatchPost) | **Post** /register/batch | Register integration entities in batch of a max size of 1000 and 1MB
 [**RegisterBatchPut**](DefaultApi.md#RegisterBatchPut) | **Put** /register/batch | Re-register integration entities in batch of a max size of 1000 and 1MB
 [**RegisterPost**](DefaultApi.md#RegisterPost) | **Post** /register | Register integration entity
@@ -114,7 +116,7 @@ No authorization required
 
 > DisconnectPut(ctx, userAgent, xLicenseKey, disconnectRequest, optional)
 
-Disconnects an entity
+disconnects an entity
 
 ### Required Parameters
 
@@ -161,7 +163,7 @@ No authorization required
 
 > []map[string]interface{} LookupBatchPost(ctx, userAgent, xLicenseKey, lookupRequest, optional)
 
-Lookup batch for list of entities, given their entityNames
+lookup batch for list of entities, given their entityNames
 
 ### Required Parameters
 
@@ -204,11 +206,105 @@ No authorization required
 [[Back to README]](../README.md)
 
 
+## LookupHostBatchPost
+
+> []map[string]interface{} LookupHostBatchPost(ctx, userAgent, xLicenseKey, lookupHostRequest, optional)
+
+lookup batch for list of host entities, given their fingerprints
+
+### Required Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**userAgent** | **string**|  | 
+**xLicenseKey** | **string**|  | 
+**lookupHostRequest** | [**[]LookupHostRequest**](LookupHostRequest.md)|  | 
+ **optional** | ***LookupHostBatchPostOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+
+Optional parameters are passed through a pointer to a LookupHostBatchPostOpts struct
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+
+ **contentEncoding** | **optional.String**|  | 
+
+### Return type
+
+[**[]map[string]interface{}**](map[string]interface{}.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json, text/plain
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## LookupHostPost
+
+> LookupHostResponse LookupHostPost(ctx, userAgent, xLicenseKey, lookupHostRequest, optional)
+
+lookup for a host entity, given the fingerprint
+
+### Required Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**userAgent** | **string**|  | 
+**xLicenseKey** | **string**|  | 
+**lookupHostRequest** | [**LookupHostRequest**](LookupHostRequest.md)|  | 
+ **optional** | ***LookupHostPostOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+
+Optional parameters are passed through a pointer to a LookupHostPostOpts struct
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+
+ **contentEncoding** | **optional.String**|  | 
+
+### Return type
+
+[**LookupHostResponse**](LookupHostResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json, text/plain
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## LookupPost
 
 > LookupResponse LookupPost(ctx, userAgent, xLicenseKey, lookupRequest, optional)
 
-Lookup for an entity, given the entityName
+lookup for an entity, given the entityName
 
 ### Required Parameters
 
